@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+<!-- 👇これを入れておけば、Googleに絶対HITしなくなります（超重要） -->
+    <meta name="robots" content="noindex,nofollow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社案内 | 安芸エンジニアリング</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>body { font-family: 'Noto Sans JP', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- ナビゲーション（トップ共通） -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <a href="index.html" class="text-xl font-bold text-slate-900 tracking-wider">安芸エンジニアリング</a>
+                <span class="text-[10px] text-slate-500 tracking-normal">AKI ENGINEERING</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-slate-600 hover:text-sky-600 transition">Home</a>
+                <a href="about.html" class="text-sky-600 border-b-2 border-sky-600 pb-1">会社案内</a>
+                <a href="services.html" class="text-slate-600 hover:text-sky-600 transition">業務案内</a>
+                <a href="recruit.html" class="text-slate-600 hover:text-sky-600 transition">採用情報</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ページヘッダー -->
+    <section class="bg-gradient-to-r from-slate-900 to-blue-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-sky-400 font-bold text-xs tracking-widest uppercase block mb-2">About Us</span>
+            <h1 class="text-3xl font-bold tracking-tight">会社案内</h1>
+        </div>
+    </section>
+
+    <!-- メインコンテンツ -->
+    <main class="flex-grow py-16 lg:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            
+            <!-- 代表メッセージ・理念 -->
+            <div class="bg-white p-8 lg:p-12 rounded-2xl shadow-sm border border-slate-100 mb-12">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-sky-600 rounded-full"></span>私たちの想い
+                </h2>
+                <p class="text-lg text-slate-700 leading-relaxed font-medium mb-6">
+                    「無理な肉体労働ではなく、頭脳と技術で勝負する。」
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    当社の設計業務は、パソコンの前に座り、静かに、しかし熱くイノベーションを起こす職場です。1969年の創業以来、半世紀以上にわたり日本のモノづくり現場を陰から支え続けてきました。
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    技術の進歩がどれだけ進んでも、それらを生み出し、扱うのは「人」に他なりません。私たちは「人がすべて」という信念のもと、メンバーが心地よく、誇りを持って働ける環境づくりを最も大切にしています。
+                </p>
+            </div>
+
+            <!-- 会社概要テーブル -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                <div class="px-8 py-6 bg-slate-900 text-white">
+                    <h3 class="font-bold text-lg">会社概要</h3>
+                </div>
+                <div class="p-8">
+                    <table class="w-full text-sm">
+                        <tbody>
+                            <tr class="border-b border-slate-100"><td class="py-4 font-bold text-slate-500 w-1/4">商号</td><td class="py-4 text-slate-900 font-medium">安芸エンジニアリング</td></tr>
+                            <tr class="border-b border-slate-100"><td class="py-4 font-bold text-slate-500">創業</td><td class="py-4 text-slate-900">1969年</td></tr>
+                            <tr class="border-b border-slate-100"><td class="py-4 font-bold text-slate-500">電話番号</td><td class="py-4 text-slate-900">0897-33-1370</td></tr>
+                            <tr class="border-b border-slate-100"><td class="py-4 font-bold text-slate-500">メールアドレス</td><td class="py-4 text-slate-900">info@akieng.net</td></tr>
+                            <tr class="border-b border-slate-100"><td class="py-4 font-bold text-slate-500">所在地</td><td class="py-4 text-slate-900">愛媛県新居浜市</td></tr>
+                            <tr><td class="py-4 font-bold text-slate-500">主な業務内容</td><td class="py-4 text-slate-600 leading-relaxed">機械設備設計、電気設備設計、テクニカルマニュアル・動画作成</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- フッター（共通） -->
+    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-900 text-center text-xs">
+        <p>&copy; 2026 安芸エンジニアリング All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+<!-- 👇これを入れておけば、Googleに絶対HITしなくなります（超重要） -->
+    <meta name="robots" content="noindex,nofollow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>業務案内 | 安芸エンジニアリング</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>body { font-family: 'Noto Sans JP', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- ナビゲーション（共通） -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <a href="index.html" class="text-xl font-bold text-slate-900 tracking-wider">安芸エンジニアリング</a>
+                <span class="text-[10px] text-slate-500 tracking-normal">AKI ENGINEERING</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-slate-600 hover:text-sky-600 transition">Home</a>
+                <a href="about.html" class="text-slate-600 hover:text-sky-600 transition">会社案内</a>
+                <a href="services.html" class="text-sky-600 border-b-2 border-sky-600 pb-1">業務案内</a>
+                <a href="recruit.html" class="text-slate-600 hover:text-sky-600 transition">採用情報</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ページヘッダー -->
+    <section class="bg-gradient-to-r from-slate-900 to-blue-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-sky-400 font-bold text-xs tracking-widest uppercase block mb-2">Our Services</span>
+            <h1 class="text-3xl font-bold tracking-tight">業務案内</h1>
+        </div>
+    </section>
+
+    <!-- メインコンテンツ -->
+    <main class="flex-grow py-16 lg:py-24">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4">確かな技術力で、モノづくりの上流工程を支える</h2>
+                <p class="text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed">
+                    2Dおよび3D CADをフルに活用し、構想から詳細設計、そして運用のサポートに至るまで、お客様のニーズに完璧に応えるエンジニアリングサービスを提供します。
+                </p>
+            </div>
+
+            <!-- サービス詳細リスト（縦並びの美しいレイアウト） -->
+            <div class="space-y-12">
+                
+                <!-- 01. 機械設備設計 -->
+                <div class="bg-white p-8 lg:p-10 rounded-2xl shadow-sm border border-slate-100 grid md:grid-cols-3 gap-8 items-start">
+                    <div class="md:col-span-1">
+                        <div class="w-12 h-12 bg-sky-50 rounded-xl flex items-center justify-center text-sky-600 text-xl mb-4">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <span class="text-xs font-bold text-sky-600 tracking-widest uppercase block mb-1">Service 01</span>
+                        <h3 class="text-xl font-bold text-slate-900">機械設備設計</h3>
+                    </div>
+                    <div class="md:col-span-2 text-slate-600 space-y-4">
+                        <p class="leading-relaxed">
+                            各種産業機械、自動化省力化装置、プラント設備などの精密な構造設計・詳細設計を行います。強度、効率、メンテナンス性を考慮し、最適な図面を落とし込みます。
+                        </p>
+                        <ul class="text-sm space-y-2 text-slate-700 font-medium">
+                            <li><i class="fa-solid fa-check text-sky-500 mr-2"></i>2D / 3D CADを用いた高度なモデリング</li>
+                            <li><i class="fa-solid fa-check text-sky-500 mr-2"></i>既存設備の改修・図面データ化対応</li>
+                            <li><i class="fa-solid fa-check text-sky-500 mr-2"></i>仕様に合わせたオーダーメイド設計</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 02. 電気設備設計 -->
+                <div class="bg-white p-8 lg:p-10 rounded-2xl shadow-sm border border-slate-100 grid md:grid-cols-3 gap-8 items-start">
+                    <div class="md:col-span-1">
+                        <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600 text-xl mb-4">
+                            <i class="fa-solid fa-charging-station"></i>
+                        </div>
+                        <span class="text-xs font-bold text-teal-600 tracking-widest uppercase block mb-1">Service 02</span>
+                        <h3 class="text-xl font-bold text-slate-900">電気設備設計</h3>
+                    </div>
+                    <div class="md:col-span-2 text-slate-600 space-y-4">
+                        <p class="leading-relaxed">
+                            機械や設備を安全かつ正確に稼働させるための、制御盤の設計や配線計画、電気回路設計を行います。強電から弱電まで、ハードウェアの安定稼働を支える重要なプロセスを担います。
+                        </p>
+                        <ul class="text-sm space-y-2 text-slate-700 font-medium">
+                            <li><i class="fa-solid fa-check text-teal-500 mr-2"></i>制御盤・配電盤の回路レイアウト設計</li>
+                            <li><i class="fa-solid fa-check text-teal-500 mr-2"></i>安全基準（各種規格）に準拠した設計</li>
+                            <li><i class="fa-solid fa-check text-teal-500 mr-2"></i>機械設計と密に連携したスムーズなトータルプラン</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 03. マニュアル動画作成 -->
+                <div class="bg-white p-8 lg:p-10 rounded-2xl shadow-sm border border-slate-100 grid md:grid-cols-3 gap-8 items-start">
+                    <div class="md:col-span-1">
+                        <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 text-xl mb-4">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <span class="text-xs font-bold text-indigo-600 tracking-widest uppercase block mb-1">Service 03</span>
+                        <h3 class="text-xl font-bold text-slate-900">マニュアル動画作成</h3>
+                    </div>
+                    <div class="md:col-span-2 text-slate-600 space-y-4">
+                        <p class="leading-relaxed">
+                            完成した設計データや製品の機構をベースに、直感的で分かりやすい「取扱説明動画」や「メンテナンスマニュアル」を制作します。紙の取扱説明書だけでは伝わりにくい複雑な動きを可視化します。
+                        </p>
+                        <ul class="text-sm space-y-2 text-slate-700 font-medium">
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i>3Dデータを活用した視覚的なアニメーション動画</li>
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i>工場の新人教育や技術伝承のためのマニュアル化</li>
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i>お客様への操作説明コストを大幅に削減</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- フッター（共通） -->
+    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-900 text-center text-xs">
+        <p>&copy; 2026 安芸エンジニアリング All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

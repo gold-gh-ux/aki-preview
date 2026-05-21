@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+<!-- 👇これを入れておけば、Googleに絶対HITしなくなります（超重要） -->
+    <meta name="robots" content="noindex,nofollow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安芸エンジニアリング | 社員ファーストの機械設計</title>
+<!-- 👇ここから追加👇 -->
+    <meta name="description" content="愛媛県新居浜市の安芸エンジニアリングです。1969年創業の歴史と確かな技術力で、2D・3D CADを用いた産業機械・電気設備の精密設計、およびマニュアル動画作成を行います。社員ファーストの快適な環境から高品質な設計を生み出します。">
+    <meta name="keywords" content="安芸エンジニアリング,機械設計,電気設計,CAD,愛媛県,新居浜市">
+    <link rel="canonical" href="https://あなたの新しいドメイン.com/">
+    <!-- 👆ここまで追加👆 -->
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome (アイコン用) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0369a1 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- ナビゲーションバー (各HTMLファイルへ正しくリンク) -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <a href="index.html" class="text-xl font-bold text-slate-900 tracking-wider">安芸エンジニアリング</a>
+                <span class="text-[10px] text-slate-500 tracking-normal">AKI ENGINEERING</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-sky-600 border-b-2 border-sky-600 pb-1">Home</a>
+                <a href="about.html" class="text-slate-600 hover:text-sky-600 transition">会社案内</a>
+                <a href="services.html" class="text-slate-600 hover:text-sky-600 transition">業務案内</a>
+                <a href="recruit.html" class="text-slate-600 hover:text-sky-600 transition">採用情報</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="recruit.html" class="bg-sky-600 hover:bg-sky-700 text-white px-5 py-2.5 rounded-lg text-sm font-medium shadow-md shadow-sky-100 transition duration-200">
+                    お問い合わせ
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ファーストビュー (Hero Section) -->
+    <section class="hero-gradient text-white py-24 lg:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-sky-500/20 text-sky-300 border border-sky-500/30 text-xs px-3 py-1 rounded-full font-medium tracking-wider uppercase mb-6">
+                    Mechanical Design Innovation
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
+                    "人がすべて"<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-teal-200">社員ファースト</span>で<br class="sm:hidden">機械設計に革新を
+                </h1>
+                <p class="text-lg text-slate-300 max-w-2xl mb-10 leading-relaxed">
+                    1969年の創業以来、確かな技術力で日本のモノづくりを支え続けてきました。私たちは、設計に携わる「人」を最も大切にし、全員が誇りを持って輝ける環境から最高品質の設計を生み出します。
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="services.html" class="bg-white text-slate-900 hover:bg-slate-100 px-6 py-3.5 rounded-lg font-medium shadow-lg transition">
+                        業務案内を見る
+                    </a>
+                    <a href="recruit.html" class="bg-transparent text-white border border-white/30 hover:bg-white/10 px-6 py-3.5 rounded-lg font-medium transition flex items-center gap-2">
+                        採用情報をみる <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社案内プレビュー (Company Intro) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <span class="text-sky-600 font-bold text-sm tracking-widest block mb-2">COMPANY</span>
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">1969年創業、歴史と信頼に裏打ちされた確かな技術</h2>
+                <p class="text-slate-600 leading-relaxed mb-8 text-sm">
+                    安芸エンジニアリングは、半世紀以上にわたり機械設計の専門集団として歩んしてきました。長年培ってきた精密な設計ノウハウと、時代に合わせた最新CADテクノロジーを融合させ、お客様の多様なニーズに柔軟にお応えします。
+                </p>
+                <a href="about.html" class="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-bold text-sm group transition">
+                    安芸エンジニアリングについて詳しく <i class="fa-solid fa-chevron-right text-xs transform group-hover:translate-x-1 transition"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 業務案内プレビュー (Services Intro) -->
+    <section class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-sky-600 font-bold text-sm tracking-widest block mb-2">SERVICES</span>
+                <h2 class="text-3xl font-bold text-slate-900">事業内容</h2>
+                <p class="text-slate-500 mt-2 text-sm">最先端の設計環境を構築し、高品質なエンジニアリングソリューションを提供します。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
+                <div class="bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm">
+                    <div class="text-sky-600 text-lg mb-3"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h3 class="font-bold text-slate-900 mb-2 text-base">機械設備設計</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">2D・3D CADを高度に駆使し、各種産業機械やプラント設備等の精密な機械設計を行います。</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm">
+                    <div class="text-teal-600 text-lg mb-3"><i class="fa-solid fa-charging-station"></i></div>
+                    <h3 class="font-bold text-slate-900 mb-2 text-base">電気設備設計</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">機械を安全かつ最適に制御するための、強電・弱電、制御盤等の電気設備設計を行います。</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm">
+                    <div class="text-indigo-600 text-lg mb-3"><i class="fa-solid fa-video"></i></div>
+                    <h3 class="font-bold text-slate-900 mb-2 text-base">マニュアル動画作成</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">設計データを基にした直感的で分かりやすい取扱説明動画やメンテナンスマニュアルを制作します。</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="services.html" class="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-bold text-sm group transition">
+                    業務案内の一覧を見る <i class="fa-solid fa-chevron-right text-xs transform group-hover:translate-x-1 transition"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 採用情報プレビュー (Recruit Intro) -->
+    <section class="py-20 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <span class="text-sky-400 font-bold text-sm tracking-widest block mb-2">RECRUIT</span>
+            <h2 class="text-3xl font-bold mb-6">私たちと一緒に働きませんか</h2>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-2xl mx-auto mb-8">
+                充実した研修体制と、短めの拘束時間（9:00〜17:15）で、私生活も大切にしながらプロへの道を歩めます。未経験からスタートしたメンバーも活躍中です。
+            </p>
+            <a href="recruit.html" class="inline-block bg-sky-500 hover:bg-sky-600 text-white px-8 py-3.5 rounded-lg font-bold text-sm shadow-md transition">
+                採用情報・募集要項を見る
+            </a>
+        </div>
+    </section>
+
+    <!-- お知らせセクション (下部にコンパクト配置) -->
+    <section class="py-12 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <h2 class="text-sm font-bold text-slate-900 mb-4 tracking-wider uppercase">Information</h2>
+            <div class="border-t border-slate-100 divide-y divide-slate-100">
+                <div class="py-3 flex items-center gap-4 text-xs">
+                    <time class="text-slate-400 font-medium">2025.01.06</time>
+                    <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded">その他</span>
+                    <span class="text-slate-800 font-medium">ホームページを開設（リニューアル）しました</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-slate-950 text-slate-500 mt-auto py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
+            <div>
+                <h3 class="text-white font-bold mb-1">安芸エンジニアリング</h3>
+                <p>愛媛県新居浜市 / info@akieng.net / 0897-33-1370</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-white transition">会社案内</a>
+                <a href="services.html" class="hover:text-white transition">業務案内</a>
+                <a href="recruit.html" class="hover:text-white transition">採用情報</a>
+            </div>
+        </div>
+        <div class="text-center text-[10px] text-slate-600 mt-8">
+            &copy; 2026 安芸エンジニアリング All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
