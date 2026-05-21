@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- デモ用：検索エンジンを完全にシャットアウト -->
+    <meta name="robots" content="noindex,nofollow">
+    <title>【DEMO】安芸エンジニアリング | 次世代の機械設計テクノロジー</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (未来感のあるフォントを追加) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Space+Grotesk:wght@500;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome (アイコン) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .font-tech { font-family: 'Space Grotesk', 'Orbitron', sans-serif; }
+        .bg-cyber {
+            background: radial-gradient(circle at 50% 50%, #0f172a 0%, #020617 100%);
+        }
+        /* 近未来的なグリッド背景効果 */
+        .cyber-grid {
+            background-image: linear-gradient(to right, rgba(14, 165, 233, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-cyber text-slate-100 antialiased min-h-screen cyber-grid">
+
+    <!-- ナビゲーション（発光するサイバーボーダー） -->
+    <header class="bg-slate-950/80 backdrop-blur-lg sticky top-0 z-50 border-b border-sky-500/20 shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-teal-300 to-emerald-400 tracking-wider font-tech">AKI ENGINEERING</span>
+                <span class="text-[9px] text-sky-400 tracking-[0.2em] font-bold">安芸エンジニアリング</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-xs font-bold tracking-widest uppercase">
+                <a href="#home" class="text-sky-400 border-b-2 border-sky-400 pb-1">TOP</a>
+                <a href="#about" class="text-slate-400 hover:text-sky-300 transition">VISION</a>
+                <a href="#services" class="text-slate-400 hover:text-sky-300 transition">BUSINESS</a>
+                <a href="#recruit" class="text-slate-400 hover:text-sky-300 transition">RECRUIT</a>
+            </nav>
+            <div>
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-bold tracking-wider text-white rounded-lg group bg-gradient-to-br from-sky-500 to-emerald-400 group-hover:from-sky-500 group-hover:to-emerald-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-sky-800">
+                    <span class="relative px-5 py-2 transition-all ease-in duration-75 bg-slate-900 rounded-md group-hover:bg-opacity-0">
+                        CONTACT
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション（ド派手ファーストビュー） -->
+    <section id="home" class="relative pt-24 pb-32 overflow-hidden flex items-center justify-center min-h-[90vh]">
+        <!-- ネオンの光の残像エフェクト（背景のボケた光） -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-500/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 bg-sky-950 text-sky-400 border border-sky-500/30 text-xs font-bold px-4 py-1.5 rounded-full tracking-widest uppercase mb-8 shadow-[0_0_15px_rgba(14,165,233,0.15)] animate-pulse">
+                <i class="fa-solid fa-circle text-[8px] text-emerald-400"></i> Next-Gen Mechanical Design
+            </span>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none mb-8">
+                <span class="text-slate-400 font-normal text-2xl sm:text-3xl block tracking-[0.3em] mb-4">伝統×デジタル革新</span>
+                歴史を刻む技術力、<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-teal-300 to-emerald-400 drop-shadow-[0_0_30px_rgba(14,165,233,0.3)]">
+                    最高峰の設計品質
+                </span>
+            </h1>
+            
+            <p class="text-base sm:text-lg text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                1969年の創業以来、日本のモノづくりの心臓部を支え続けて半世紀。安芸エンジニアリングは、熟練の設計ノウハウと最先端の3Dデジタルテクノロジーを融合させ、未来のインフラを切り拓きます。
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#services" class="bg-gradient-to-r from-sky-500 to-teal-500 hover:from-sky-600 hover:to-teal-600 text-slate-950 font-black px-8 py-4 rounded-xl text-sm tracking-wider shadow-[0_0_25px_rgba(14,165,233,0.4)] transition transform hover:-translate-y-0.5">
+                    事業内容を体感する
+                </a>
+                <a href="#recruit" class="bg-slate-900 text-slate-300 border border-slate-700 hover:border-sky-500 px-8 py-4 rounded-xl text-sm font-bold tracking-wider transition flex items-center gap-2">
+                    採用エントリー <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 実績カウンターセクション（数字で圧倒する） -->
+    <section class="border-y border-slate-800 bg-slate-950/60 backdrop-blur-sm py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-[10px] text-sky-400 tracking-widest uppercase font-bold mb-1">FOUNDED</div>
+                    <div class="text-3xl sm:text-4xl font-black font-tech text-white">1969</div>
+                    <div class="text-[11px] text-slate-500 mt-1">昭和44年創業の信頼</div>
+                </div>
+                <div>
+                    <div class="text-[10px] text-teal-400 tracking-widest uppercase font-bold mb-1">HISTORY</div>
+                    <div class="text-3xl sm:text-4xl font-black font-tech text-white">57 <span class="text-xs text-teal-400">Years</span></div>
+                    <div class="text-[11px] text-slate-500 mt-1">半世紀を超える実績</div>
+                </div>
+                <div>
+                    <div class="text-[10px] text-emerald-400 tracking-widest uppercase font-bold mb-1">DESIGN WORK</div>
+                    <div class="text-3xl sm:text-4xl font-black font-tech text-white">2D / 3D</div>
+                    <div class="text-[11px] text-slate-500 mt-1">高度CADエンジニアリング</div>
+                </div>
+                <div>
+                    <div class="text-[10px] text-purple-400 tracking-widest uppercase font-bold mb-1">WORKSTYLE</div>
+                    <div class="text-3xl sm:text-4xl font-black font-tech text-white">17:15</div>
+                    <div class="text-[11px] text-slate-500 mt-1">残業ゼロへの徹底追求</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 企業理念（ダーク＆ネオン） -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-[0.4em] text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-teal-400 uppercase block mb-3 font-tech">01 / CORPORATE VIBES</span>
+                <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-white">“人がすべて” という確固たる信念</h2>
+            </div>
+            
+            <div class="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 text-8xl font-black text-slate-800/20 font-tech pointer-events-none select-none">AKI</div>
+                <div class="max-w-3xl mx-auto text-center space-y-6">
+                    <p class="text-lg sm:text-xl text-slate-200 leading-relaxed font-bold">
+                        「最高の機械設計は、心にゆとりがあるエンジニアから生まれる。」
+                    </p>
+                    <p class="text-sm text-slate-400 leading-8 text-left sm:text-center">
+                        私たちは、社員一人ひとりの生活と成長を最も重要視しています。<br class="hidden sm:block">
+                        17:15定時の徹底、最先端CADマシンの惜しみない投入、そして未経験者を一流のプロへと育てる育成体制。<br class="hidden sm:block">
+                        この「社員ファースト」の環境こそが、長きにわたり多くの一流クライアント様から選ばれ続けている安芸エンジニアリングの強みの源泉です。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 事業案内（カードが激しくホバー反応するデザイン） -->
+    <section id="services" class="py-24 bg-slate-950/40 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-[0.4em] text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400 uppercase block mb-3 font-tech">02 / CORE BUSINESS</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">エンジニアリング領域</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- カード1 -->
+                <div class="bg-slate-900/40 border border-slate-800 hover:border-sky-500/50 rounded-2xl p-8 shadow-xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(14,165,233,0.1)]">
+                    <div class="w-12 h-12 rounded-xl bg-sky-950 flex items-center justify-center text-sky-400 text-xl mb-6 group-hover:bg-sky-500 group-hover:text-slate-950 transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.2)]">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 group-hover:text-sky-400 transition-colors">機械設備設計</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        最新の2D・3D CADシステムを駆使し、各種産業機械、プラント設備、省力化機械などの高精度な設計・モデリングを遂行。構想から詳細設計までワンストップで対応します。
+                    </p>
+                </div>
+                <!-- カード2 -->
+                <div class="bg-slate-900/40 border border-slate-800 hover:border-teal-500/50 rounded-2xl p-8 shadow-xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(20,184,166,0.1)]">
+                    <div class="w-12 h-12 rounded-xl bg-teal-950 flex items-center justify-center text-teal-400 text-xl mb-6 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all duration-300 shadow-[0_0_15px_rgba(20,184,166,0.2)]">
+                        <i class="fa-solid fa-charging-station"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 group-hover:text-teal-400 transition-colors">電気設備設計</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        各種プラントや工場の強電・弱電盤設計、計装設計、および高度な制御シーケンス設計を行います。機械のポテンシャルを最大限に引き出すスマートな電気システムを構築します。
+                    </p>
+                </div>
+                <!-- カード3 -->
+                <div class="bg-slate-900/40 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-8 shadow-xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(16,185,129,0.1)]">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-950 flex items-center justify-center text-emerald-400 text-xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-all duration-300 shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 group-hover:text-emerald-400 transition-colors">マニュアル動画制作</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        設計CADデータをビジュアルソースとして活用し、直感的で極めて分かりやすい「3D取扱説明動画」や「メンテナンスマニュアル」を自社制作。紙を超えた次世代の解説ソリューションです。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 採用情報（圧倒的な条件の良さを強調） -->
+    <section id="recruit" class="py-24 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-[0.4em] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 uppercase block mb-3 font-tech">03 / CAREER DESIGNS</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">未来を、自分の手で設計する</h2>
+            </div>
+
+            <!-- 条件・特徴のハイライトグリッド -->
+            <div class="grid sm:grid-cols-2 gap-4 mb-12 max-w-4xl mx-auto">
+                <div class="flex items-center gap-4 bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="text-sky-400 bg-sky-950/50 w-10 h-10 rounded-lg flex items-center justify-between justify-center text-sm"><i class="fa-solid fa-clock mx-auto"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">9:00〜17:15（実働7.25h）</h4>
+                        <p class="text-slate-500 text-[11px] mt-0.5">残業は原則なし。自分の時間を100%確保。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="text-teal-400 bg-teal-950/50 w-10 h-10 rounded-lg flex items-center justify-between justify-center text-sm"><i class="fa-solid fa-graduation-cap mx-auto"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">未経験・文系からのプロ育成</h4>
+                        <p class="text-slate-500 text-[11px] mt-0.5">専門知識ゼロからCADをマスターできる徹底研修。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="text-emerald-400 bg-emerald-950/50 w-10 h-10 rounded-lg flex items-center justify-between justify-center text-sm"><i class="fa-solid fa-mug-hot mx-auto"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">抜群の定着率＆アットホーム</h4>
+                        <p class="text-slate-500 text-[11px] mt-0.5">互いの個性を尊重し合う、温かくフラットな職場。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+                    <div class="text-purple-400 bg-purple-950/50 w-10 h-10 rounded-lg flex items-center justify-between justify-center text-sm"><i class="fa-solid fa-shield-halved mx-auto"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">安定の極み、1969年創業</h4>
+                        <p class="text-slate-500 text-[11px] mt-0.5">揺るぎない経営基盤で、生涯安心して働けます。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 募集要項（サイバーテーブル） -->
+            <div class="bg-slate-900/30 border border-slate-800 rounded-2xl overflow-hidden max-w-4xl mx-auto shadow-2xl">
+                <div class="p-6 bg-slate-900/80 border-b border-slate-800 flex justify-between items-center">
+                    <h3 class="font-bold text-sm tracking-wider flex items-center gap-2"><i class="fa-solid fa-file-invoice text-sky-400"></i> 募集要項（中途・新卒共通）</h3>
+                    <span class="bg-sky-500/10 text-sky-400 text-[10px] font-bold px-2 py-0.5 rounded border border-sky-500/20">正社員募集</span>
+                </div>
+                <div class="divide-y divide-slate-800/60 text-xs">
+                    <div class="grid sm:grid-cols-4 p-5 gap-2 sm:gap-0">
+                        <div class="font-bold text-slate-400">募集職種</div>
+                        <div class="sm:col-span-3 text-slate-200 font-bold">機械設計エンジニア / 電気設計エンジニア</div>
+                    </div>
+                    <div class="grid sm:grid-cols-4 p-5 gap-2 sm:gap-0">
+                        <div class="font-bold text-slate-400">給与 / 手当</div>
+                        <div class="sm:col-span-3 text-slate-200 leading-relaxed">
+                            <span class="font-bold text-emerald-400">月給 200,000円 〜 400,000円</span> ＋ 諸手当<br>
+                            <span class="text-slate-500 text-[11px]">※経験・能力・前職給与を最大限に考慮の上、優遇いたします。</span>
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-4 p-5 gap-2 sm:gap-0">
+                        <div class="font-bold text-slate-400">勤務時間</div>
+                        <div class="sm:col-span-3 text-slate-200 font-tech font-bold text-sm text-sky-400">09:00 〜 17:15 <span class="text-xs font-sans text-slate-500 font-normal">（実働7時間15分 / 休憩60分）</span></div>
+                    </div>
+                    <div class="grid sm:grid-cols-4 p-5 gap-2 sm:gap-0">
+                        <div class="font-bold text-slate-400">休日・休暇</div>
+                        <div class="sm:col-span-3 text-slate-200 leading-relaxed">週休2日制（土日）、祝日、夏季休暇、年末年始休暇、有給休暇、慶弔休暇</div>
+                    </div>
+                    <div class="grid sm:grid-cols-4 p-5 gap-2 sm:gap-0">
+                        <div class="font-bold text-slate-400">勤務地</div>
+                        <div class="sm:col-span-3 text-slate-200">愛媛県新居浜市（転勤なし）</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ（ネオンフォーム） -->
+    <section id="contact" class="py-24 bg-slate-950 border-t border-slate-900 relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold tracking-[0.4em] text-sky-400 uppercase block mb-3 font-tech">CONTACT</span>
+                <h2 class="text-3xl font-black text-white">プロジェクトのご相談・採用エントリー</h2>
+                <p class="text-slate-500 text-xs mt-2">些細なことでもお気軽にご相談ください。2営業日以内に担当よりご連絡いたします。</p>
+            </div>
+
+            <form class="space-y-5 bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl shadow-xl">
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-400 tracking-wider mb-2">お問い合わせ種別</label>
+                    <select class="w-full bg-slate-950 border border-slate-800 focus:border-sky-500 rounded-lg px-4 py-3 text-xs text-slate-200 outline-none transition">
+                        <option>業務に関するご相談・お見積り</option>
+                        <option>求人・採用へのエントリー</option>
+                        <option>その他のお問い合わせ</option>
+                    </select>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[11px] font-bold text-slate-400 tracking-wider mb-2">お名前 / 企業名</label>
+                        <input type="text" placeholder="例：山田 太郎" class="w-full bg-slate-950 border border-slate-800 focus:border-sky-500 rounded-lg px-4 py-3 text-xs text-slate-200 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-slate-400 tracking-wider mb-2">メールアドレス</label>
+                        <input type="email" placeholder="example@akieng.net" class="w-full bg-slate-950 border border-slate-800 focus:border-sky-500 rounded-lg px-4 py-3 text-xs text-slate-200 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-400 tracking-wider mb-2">メッセージ内容</label>
+                    <textarea rows="4" placeholder="具体的なご相談内容をご記入ください..." class="w-full bg-slate-950 border border-slate-800 focus:border-sky-500 rounded-lg px-4 py-3 text-xs text-slate-200 outline-none transition"></textarea>
+                </div>
+                <div class="pt-2">
+                    <button type="button" class="w-full bg-gradient-to-r from-sky-500 via-teal-500 to-emerald-500 hover:opacity-90 text-slate-950 font-black tracking-widest text-xs py-4 rounded-lg shadow-lg shadow-sky-500/10 transition">
+                        メッセージを送信する（送信デモ）
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-slate-950 text-slate-600 py-12 border-t border-slate-900 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <h3 class="text-white font-bold tracking-wider mb-1 text-sm font-tech">AKI ENGINEERING</h3>
+                <p class="text-[11px] text-slate-500">愛媛県新居浜市 / TEL: 0897-33-1370 / MAIL: info@akieng.net</p>
+            </div>
+            <div class="flex gap-6 text-slate-500 font-bold tracking-wider text-[11px]">
+                <a href="#home" class="hover:text-sky-400 transition">TOP</a>
+                <a href="#about" class="hover:text-sky-400 transition">VISION</a>
+                <a href="#services" class="hover:text-sky-400 transition">BUSINESS</a>
+                <a href="#recruit" class="hover:text-sky-400 transition">RECRUIT</a>
+            </div>
+        </div>
+        <div class="text-center text-[10px] text-slate-700 mt-8 font-tech">
+            &copy; 2026 AKI ENGINEERING. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+</body>
+</html>
